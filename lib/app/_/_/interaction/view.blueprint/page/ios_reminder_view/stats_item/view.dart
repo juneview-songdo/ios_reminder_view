@@ -22,7 +22,6 @@ class StatsItemViewState extends State<StatsItemView> with StateMother {
             Container(
               padding: EdgeInsets.all(20),
               height: 116,
-              width: MediaQuery.of(context).size.width / 2.3,
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(10)),
               child: Column(
@@ -30,6 +29,7 @@ class StatsItemViewState extends State<StatsItemView> with StateMother {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
                     children: [
                       Container(
                         height: 35,
@@ -64,11 +64,11 @@ class StatsItemViewState extends State<StatsItemView> with StateMother {
                   )
                 ],
               ),
-            ),
+            ).expanded(),
+            Gap(12),
             Container(
               padding: EdgeInsets.all(20),
               height: 116,
-              width: MediaQuery.of(context).size.width / 2.3,
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(10)),
               child: Column(
@@ -110,7 +110,7 @@ class StatsItemViewState extends State<StatsItemView> with StateMother {
                   )
                 ],
               ),
-            ),
+            ).expanded(),
           ],
         ),
         SizedBox(
